@@ -11,4 +11,4 @@ while(n):
 		j -= 1
 	sys.stdout.write("PUM\n")
 	i += 1
-	n -= 1
+	n -= 1'
