@@ -3,11 +3,12 @@
 typedef enum { false, true } bool;
 
 int surprassB(int pa, int pb, double g1, double g2) {
+
     int years = 0, populationA = pa, populationB = pb;
     double percentA, percentB;
 
     while(populationA <= populationB) {
-        if(years > 100)
+        if(years >= 100) 
             return false;
         
         percentA = populationA * (g1 / 100);
@@ -41,7 +42,7 @@ int main() {
         scanf("%d %d %lf %lf", &populationA, &populationB, &percentA, &percentB);
 
         int years = surprassB(populationA, populationB, percentA, percentB);
-
+    
         result(years);
     }
 
